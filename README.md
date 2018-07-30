@@ -22,7 +22,7 @@ JXLClassAssignPropertyChecker can search **"assign"** **id** properties of Class
 ## How to use
 1. Drag **JXLClassAssignPropertyChecker.h** and **JXLClassAssignPropertyChecker.m** into your project.
 2. Write one line code, just call **[JXLClassAssignPropertyChecker doCheckAssignPropertiesAndGetResults:]** to get list, and print it.
-```
+```objective-c
 #import "JXLClassAssignPropertyChecker.h"
 
     // Put below code in [AppDelegate application:didFinishLaunchingWithOptions:] or main() in Debug Mode
@@ -34,7 +34,7 @@ JXLClassAssignPropertyChecker can search **"assign"** **id** properties of Class
 
 ```
 Result will like this
-```
+```objective-c
 {(
     "SomeClass.info"
 )}
@@ -45,7 +45,7 @@ Result will like this
 
 ##Ignore properties not in your code
 All "assign" id properties of Classes including iOS/Mac Static Libraries and third party Libraries imported will be list out. Since you do not care some of them at all, you can ignore the properties you do not care by pass them through **"classPropertiesNotInResults"** parameter:
-```
+```objective-c
 // Classes to test
 @interface JXLTESTClass1: NSObject
 @property (nonatomic, assign) NSString* str1;
@@ -64,7 +64,7 @@ All "assign" id properties of Classes including iOS/Mac Static Libraries and thi
 }
 ```
 Results will filter out "JXLTESTClass2.num":
-```
+```objective-c
 {(
     "JXLTESTClass1.str1",
     "JXLTESTClass2.int1",
