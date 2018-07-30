@@ -1,4 +1,4 @@
-#JXLClassAssignPropertyChecker
+# JXLClassAssignPropertyChecker
 
 JXLClassAssignPropertyChecker is a tool to search **"assign"** **id** properties of Classes.
 In **ARC** mode, **"assign"** **id** properties is risks for App if not in correct use. In my participated projects, too many crashes occurred like this:
@@ -19,7 +19,7 @@ NSLog(@"%@",oneObj.info); // Whoops? Crashed!
 ```
 JXLClassAssignPropertyChecker can search **"assign"** **id** properties of Classes and list them all in a NSSet, so you can revises all these **"assign"** **id** properties to make your APP robust.
 
-##How to use
+## How to use
 1. Drag **JXLClassAssignPropertyChecker.h** and **JXLClassAssignPropertyChecker.m** into your project.
 2. Write one line code, just call **[JXLClassAssignPropertyChecker doCheckAssignPropertiesAndGetResults:]** to get list, and print it.
 ```
@@ -40,7 +40,7 @@ Result will like this
 )}
 ```
 
-##Warning
+## Warning
 **Remember do not use this tool in release version**, because the search function run over all the Classes including Libraries imported, it will be very very very slow. JXLClassAssignPropertyChecker is designed for developers to check their codes, but not for APP users.
 
 ##Ignore properties not in your code
@@ -71,9 +71,9 @@ Results will filter out "JXLTESTClass2.num":
 )}
 ```
 
-##LICENSE
+## LICENSE
 MIT License
 
-####Hope it helpful for you.
+#### Hope it helpful for you.
 It is my first open source in Github, may not satisfy you. Any questions and suggestions please let me know. Thank you. I am **LI JINXIN**, email: 438210981@qq.com
 
