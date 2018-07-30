@@ -43,7 +43,7 @@ Result will like this
 ## Warning
 **Remember do not use this tool in release version**, because the search function run over all the Classes including Libraries imported, it will be very very very slow. JXLClassAssignPropertyChecker is designed for developers to check their codes, but not for APP users.
 
-##Ignore properties not in your code
+## Ignore properties not in your code
 All "assign" id properties of Classes including iOS/Mac Static Libraries and third party Libraries imported will be list out. Since you do not care some of them at all, you can ignore the properties you do not care by pass them through **"classPropertiesNotInResults"** parameter:
 ```objective-c
 // Classes to test
