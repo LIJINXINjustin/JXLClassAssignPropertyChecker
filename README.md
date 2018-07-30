@@ -2,7 +2,7 @@
 
 JXLClassAssignPropertyChecker is a tool to search **"assign"** **id** properties of Classes.
 In **ARC** mode, **"assign"** **id** properties is risks for App if not in correct use. In my participated projects, too many crashes occurred like this:
-```
+```objective-c
 @interface SomeClass: NSObject
 @property (assign) NSString *info;
 @end
